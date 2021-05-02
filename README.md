@@ -59,8 +59,12 @@ To start, we'll need to make a `Bird` model and generate some sample data for
 our API. Let's use a Rails generator to set up our model:
 
 ```sh
-rails g model Bird name species
+rails g model Bird name species --no-test-framework
 ```
+
+> **Notes**: the `--no-test-framework` flag will tell Rails not to generate any
+> test code for this model. We won't be writing tests for this example, so it's
+> better not to generate any unnecessary files!
 
 After generating the model, run the migration:
 
@@ -171,7 +175,7 @@ get an unexpected response if they try to use a route that doesn't exist.
 To complete our first couple RESTful actions, let's set up a controller:
 
 ```sh
-rails g controller Birds
+rails g controller Birds --no-test-framework
 ```
 
 In the controller, add the following code:
