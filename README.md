@@ -213,5 +213,5 @@ get the benefit of these handy abstractions that are built into Rails.
 
 ## Resources
 
-- [link 1](example.com)
-- [link 2](example.com)
+- [Rails Resource Routing](https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default)
+- [`resources` method](https://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper/Resources.html)
