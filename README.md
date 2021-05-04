@@ -1,4 +1,4 @@
-# Read Resources - Index and Show
+# Rails Resource Routing: Index and Show
 
 ## Learning Goals
 
