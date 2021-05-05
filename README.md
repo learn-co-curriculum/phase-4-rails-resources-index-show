@@ -53,6 +53,10 @@ we'll be working with is birds. In this lesson, we'll cover the two routes for
   </tr>
 </table>
 
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/czpDsqpbV20?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 ## Setup
 
 To start, we'll need to make a `Bird` model and generate some sample data for
