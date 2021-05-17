@@ -66,10 +66,6 @@ our API. Let's use a Rails generator to set up our model:
 rails g model Bird name species --no-test-framework
 ```
 
-> **Notes**: the `--no-test-framework` flag will tell Rails not to generate any
-> test code for this model. We won't be writing tests for this example, so it's
-> better not to generate any unnecessary files!
-
 After generating the model, run the migration:
 
 ```sh
@@ -97,8 +93,8 @@ To set up our `index` and `show` actions, we'll first need to create some
 routes. Recall that the RESTful convention for these routes is as follows:
 
 ```txt
-GET /birds      => show a list of all birds
-GET /birds/:id  => show one specific bird
+GET /birds      #=> show a list of all birds
+GET /birds/:id  #=> show one specific bird
 ```
 
 Just like in previous lessons, we can create routes for these actions in Rails
