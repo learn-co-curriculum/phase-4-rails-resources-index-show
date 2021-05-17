@@ -93,8 +93,8 @@ To set up our `index` and `show` actions, we'll first need to create some
 routes. Recall that the RESTful convention for these routes is as follows:
 
 ```txt
-GET /birds      #=> show a list of all birds
-GET /birds/:id  #=> show one specific bird
+GET /birds      => show a list of all birds
+GET /birds/:id  => show one specific bird
 ```
 
 Just like in previous lessons, we can create routes for these actions in Rails
