@@ -142,8 +142,8 @@ Prefix  Verb    URI Pattern           Controller#Action
         DELETE  /birds/:id(.:format)  birds#destroy
 ```
 
-With just one line of code &mdash; `resources :birds` &mdash; Rails created all
-the RESTful routes we need and mapped them to the appropriate controller action!
+With just one line of code — `resources :birds` — Rails created all the RESTful
+routes we need and mapped them to the appropriate controller action!
 
 With great power comes great responsibility. Even though we'll eventually add
 all of these RESTful routes to our API, for the time being, we only need two:
