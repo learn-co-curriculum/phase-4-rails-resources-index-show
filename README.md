@@ -28,7 +28,13 @@ we'll be working with is birds. In this lesson, we'll cover the two routes for
 
 ## Setup
 
-To start, we'll need to make a `Bird` model and generate some sample data for
+First, we'll need to install the dependencies as usual:
+
+```sh
+bundle install
+```
+
+Next, we'll need to make a `Bird` model and generate some sample data for
 our API. Let's use a Rails generator to set up our model:
 
 ```sh
