@@ -14,13 +14,13 @@ we'll be working with is birds. In this lesson, we'll cover the two routes for
 **read** actions to display information about the birds in our database: the
 `index` and `show` actions.
 
-| HTTP Verb | Path | Controller#Action | Description |
-| --- | --- | --- | --- |
-| GET | /birds | birds#index | Show all birds |
-| POST | /birds | birds#create | Create a new bird |
-| GET | /birds/:id | birds#show | Show a specific bird |
-| PATCH or PUT | /birds/:id | birds#update | Update a specific bird |
-| DELETE | /birds/:id | birds#destroy | Delete a specific bird |
+| HTTP Verb    | Path       | Controller#Action | Description            |
+| ------------ | ---------- | ----------------- | ---------------------- |
+| GET          | /birds     | birds#index       | Show all birds         |
+| POST         | /birds     | birds#create      | Create a new bird      |
+| GET          | /birds/:id | birds#show        | Show a specific bird   |
+| PATCH or PUT | /birds/:id | birds#update      | Update a specific bird |
+| DELETE       | /birds/:id | birds#destroy     | Delete a specific bird |
 
 ## Video Walkthrough
 
@@ -30,21 +30,21 @@ we'll be working with is birds. In this lesson, we'll cover the two routes for
 
 First, we'll need to install the dependencies as usual:
 
-```sh
-bundle install
+```console
+$ bundle install
 ```
 
 Next, we'll need to make a `Bird` model and generate some sample data for
 our API. Let's use a Rails generator to set up our model:
 
-```sh
-rails g model Bird name species --no-test-framework
+```console
+$ rails g model Bird name species --no-test-framework
 ```
 
 After generating the model, run the migration:
 
-```sh
-rails db:migrate
+```console
+$ rails db:migrate
 ```
 
 Next, we'll create some seed data in the `db/seeds.rb` file:
@@ -58,8 +58,8 @@ Bird.create!(name: "Mourning Dove", species: "Zenaida Macroura")
 
 To add these birds to our database, run the seed file:
 
-```sh
-rails db:seed
+```console
+$ rails db:seed
 ```
 
 ## Creating RESTful Routes with Resources
@@ -85,10 +85,10 @@ end
 ```
 
 We can verify that these routes were added successfully by viewing all of our
-app's routes using a handy Rake task. In your terminal, run `rails routes`. You
-should see something like this:
+app's routes using a handy Rake task. In your terminal, run:
 
-```txt
+```console
+$ rails routes
 Prefix  Verb  URI Pattern           Controller#Action
  birds  GET   /birds(.:format)      birds#index
         GET   /birds/:id(.:format)  birds#show
@@ -107,7 +107,8 @@ end
 
 Then, run `rails routes` again:
 
-```txt
+```console
+$ rails routes
 Prefix  Verb    URI Pattern           Controller#Action
  birds  GET     /birds(.:format)      birds#index
         POST    /birds(.:format)      birds#create
@@ -134,7 +135,8 @@ end
 Running `rails routes` now will give us the same output as when we wrote out the
 routes by hand:
 
-```txt
+```console
+$ rails routes
 Prefix  Verb  URI Pattern           Controller#Action
  birds  GET   /birds(.:format)      birds#index
         GET   /birds/:id(.:format)  birds#show
@@ -149,8 +151,8 @@ get an unexpected response if they try to use a route that doesn't exist.
 
 To complete our first couple RESTful actions, let's set up a controller:
 
-```sh
-rails g controller Birds --no-test-framework
+```console
+$ rails g controller Birds --no-test-framework
 ```
 
 In the controller, add the following code:
