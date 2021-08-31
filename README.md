@@ -72,8 +72,8 @@ GET /birds      => show a list of all birds
 GET /birds/:id  => show one specific bird
 ```
 
-Just like in previous lessons, we can create routes for these actions in Rails
-like so:
+Just like in previous lessons, we can build the routes for these actions in
+Rails by hand, like so:
 
 ```rb
 # config/routes.rb
@@ -94,8 +94,8 @@ Prefix  Verb  URI Pattern           Controller#Action
         GET   /birds/:id(.:format)  birds#show
 ```
 
-Rails has a tool for us that will make it even easier to create routes following
-RESTful conventions: `resources`.
+However, there is a better way to build the routes: Rails provides a tool,
+`resources`, that enforces RESTful conventions and saves us work.
 
 Edit the `config/routes.rb` file like so:
 
@@ -186,11 +186,11 @@ check your work!
 
 ## Conclusion
 
-Rails encourages developers to follow **REST conventions** by providing built-in
-tools like the `resource` method to quickly create RESTful routes and their
-corresponding controller actions. By following the **convention over
-configuration** paradigm, not only do we speed up our development time, we also
-get the benefit of these handy abstractions that are built into Rails.
+In this lesson, we learned how to set up the two "Read" CRUD actions.
+Specifically, we set up the routes to handle the requests as well as the
+controller actions to return the requested information. We also learned how to
+use a built-in tool, `resources`, as an easier way to set up routes that follow
+**REST conventions**.
 
 ## Resources
 
