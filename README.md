@@ -14,13 +14,13 @@ we'll be working with is birds. In this lesson, we'll cover the two routes for
 **read** actions to display information about the birds in our database: the
 `index` and `show` actions.
 
-| HTTP Verb    | Path       | Controller#Action | Description            |
-| ------------ | ---------- | ----------------- | ---------------------- |
-| GET          | /birds     | birds#index       | Show all birds         |
-| POST         | /birds     | birds#create      | Create a new bird      |
-| GET          | /birds/:id | birds#show        | Show a specific bird   |
-| PATCH or PUT | /birds/:id | birds#update      | Update a specific bird |
-| DELETE       | /birds/:id | birds#destroy     | Delete a specific bird |
+| HTTP Verb    | Path           | Controller#Action | Description              |
+| ------------ | -------------- | ----------------- | ------------------------ |
+| **GET**      | **/birds**     | **birds#index**   | **Show all birds**       |
+| POST         | /birds         | birds#create      | Create a new bird        |
+| **GET**      | **/birds/:id** | **birds#show**    | **Show a specific bird** |
+| PATCH or PUT | /birds/:id     | birds#update      | Update a specific bird   |
+| DELETE       | /birds/:id     | birds#destroy     | Delete a specific bird   |
 
 ## Video Walkthrough
 
