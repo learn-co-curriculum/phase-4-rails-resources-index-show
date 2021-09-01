@@ -192,6 +192,15 @@ controller actions to return the requested information. We also learned how to
 use a built-in tool, `resources`, as an easier way to set up routes that follow
 **REST conventions**.
 
+## Check For Understanding
+
+Before you move on, make sure you can answer the following questions:
+
+1. Tools like `resources` are examples of Rails' use of the **convention over
+   configuration** paradigm. What are the advantages of this approach?
+2. Why is it a good idea to limit the routes you create to ones that your API
+   will actually use?
+
 ## Resources
 
 - [Rails Resource Routing](https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default)
