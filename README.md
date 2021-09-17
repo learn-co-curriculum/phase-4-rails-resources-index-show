@@ -22,9 +22,8 @@ we'll be working with is birds. In this lesson, we'll cover the two routes for
 | PATCH or PUT | /birds/:id     | birds#update      | Update a specific bird   |
 | DELETE       | /birds/:id     | birds#destroy     | Delete a specific bird   |
 
-## Video Walkthrough
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/czpDsqpbV20?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-- ## Video Walkthrough -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/czpDsqpbV20?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 
 ## Setup
 
